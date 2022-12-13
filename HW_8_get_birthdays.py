@@ -59,23 +59,28 @@ def get_birthdays_per_week(n):
     for dm in monday_w:
         mon_day = dm.get("name")
         list_persons_mon += mon_day + ", "
-    print(f"Monday: {list_persons_mon}")
+        list_persons_mon1 = list_persons_mon.replace(",", "", -1)
+    print(f"Monday: {list_persons_mon1}")
     for dt in tuesday_w:
         tu_day = dt.get("name")
         list_persons_tu += tu_day + ", "
-    print(f"Tuesday: {list_persons_tu}")
+        list_persons_tu1 = list_persons_tu.replace(",", "", -1)
+    print(f"Tuesday: {list_persons_tu1}")
     for dw in wednesday_w:
         wed_day = dw.get("name")
         list_persons_wd += wed_day + ", "
-    print(f"Wednesday: {list_persons_wd}")
+        list_persons_wd1 = list_persons_wd.replace(",", "", -1)
+    print(f"Wednesday: {list_persons_wd1}")
     for dth in thursday_w:
         th_day = dth.get("name")
         list_persons_th += th_day + ", "
-    print(f"Thursday: {list_persons_th}")
+        list_persons_th1 = list_persons_th.replace(",", "", -1)
+    print(f"Thursday: {list_persons_th1}")
     for df in friday_w:
         fr_day = df.get("name")
         list_persons_fr += fr_day + ", "
-    print(f"Friday: {list_persons_fr}")
+        list_persons_fr1 = list_persons_fr.replace(",", "", -1)
+    print(f"Friday: {list_persons_fr1}")
 
 
 get_birthdays_per_week(6)
